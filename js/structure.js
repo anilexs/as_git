@@ -37,6 +37,12 @@ $(document).ready(function() {
   var button3 = $('<button><i class="fas fa-circle-xmark" style="color: #ff0000;"></i></button>');
 
   // Ajouter les actions aux boutons (remplacez les actions par ce que vous souhaitez faire)
+  $('#hellpExcla').click(function() {
+    $('#hellpExcla').toggle();
+    $('#help').animate({
+          'right': '0px' 
+        }, 3000);
+  });
   button1.click(function() {
     // Action pour le bouton 1
     console.log("Clic sur le bouton 1");
@@ -48,9 +54,13 @@ $(document).ready(function() {
   });
 
   button3.click(function() {
-    // Action pour le bouton 3
-    console.log("Clic sur le bouton 3");
-    $('.helpcall').toggle();
+  //   var newImagePath = '../img/silicacry.jpg';
+  // $('#help').attr('src', newImagePath);
+
+    setTimeout(function() {
+      $('#hellpExcla').toggle();
+      }, 3000); 
+
     $('#help').animate({
           'right': '-250px' 
         }, 3000);

@@ -132,7 +132,8 @@ button{
   width: 200px;
   padding-bottom: 30px;
 }
-.exclamation{
+#hellpExcla{
+    display: none;
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -141,7 +142,4 @@ button{
     border-radius: 100%;
     border: 2px solid rgb(255, 0, 0);
     color: rgb(255, 0, 0);
-}
-.helpcall{
-    display: none;
 }
